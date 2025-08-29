@@ -1,20 +1,82 @@
 # Manwegongkong.github.io
 
-<!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+    background-color: lightblue;
+}
+h1, h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: black;
+    font-style: italic;
+    font-weight:bold;
+}
+.flex-header {
+    display: flex;
+    gap: 375px;
+    align-items: center;
+    margin-bottom: -10px;
+}
+.flex-columns {
+    display: flex;
+    gap: 200px; /* match header gap */
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+</style>
 </head>
 <body>
-
-<h1>I hate w3schools</h1>
-<p>Why?</p>
-
-<ul>
-<li>It doesnt auto-save code
-<li>It crashed twice and I'm too tired to rewrite my stuff so I'm doing this
-<li>I have a passionate hatred for this godawful crashing website
-<p>
-<iframe src="https://www.desmos.com/calculator/7iuhc9bjjw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-
+    <div class="flex-header">
+        <h1>Chopin</h1>
+        <h2>Rachmaninov</h2>
+    </div>
+    <div class="flex-columns">
+        <div class="column">
+            <p>Mr. Showpah</p>
+            <ul>
+                <li>Nocturnes</li>
+                <li>Ballades</li>
+                <li>Waltzes</li>
+                <li>Sonatas</li>
+                <li>Scherzi</li>
+            </ul>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Frederic_Chopin_photo.jpeg/960px-Frederic_Chopin_photo.jpeg"
+                alt="Chopin"
+                title="Chopin"
+                width="300"
+                height="400"
+            >
+        </div>
+        <div class="column">
+            <p>Mr. Monster Hands</p>
+            <ul>
+                <li>Piano Concerti</li>
+                <li>Symphonies</li>
+                <li>Preludes</li>
+                <li>Morceaux de fantasies</li>
+                <li>Elegies</li>
+            </ul>
+            <img
+                src="https://gdb.rferl.org/5173d166-fc5a-4227-83dc-9e2f887d4db3_w1071_s_d3.jpg"
+                alt="Rachmaninov"
+                title="Rachmaninov"
+                width="350"
+                height="400"
+            >
+        </div>
+    </div>
 </body>
 </html>
